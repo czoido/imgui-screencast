@@ -55,7 +55,7 @@ GLFWwindow *createWindow()
 	if (window == NULL)
 		return NULL;
 
-			glfwMakeContextCurrent(window);
+	glfwMakeContextCurrent(window);
 	glfwSwapInterval(1); // Enable vsync
 
 	bool err = glewInit() != GLEW_OK;
